@@ -9,7 +9,7 @@ token:
   secret: changed_#1thisisaverysecurekeywithatleast32characterslongthisisa
   
 gateway:
-  ip: 192.168.45.83
+  ip: 172.18.0.5
 order-service:
  url: http://ORDERSERVICE/order-service/%s/orders
  exception: 
