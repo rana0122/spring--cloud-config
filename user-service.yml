@@ -1,0 +1,16 @@
+spring:
+   datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: '{cipher}AQB+MjTU7tyaySzXzokUwin0O3LMkI3L87EsSRx+qj4yLry0imCiJ9iYFDjZe+n/E5trRfeBVNQls6OXSbRBEglEWVLlH0fF1WtNrB1uLIgB2B/JdeTh/IH6RyO3Ec/bTvZr3PkHR3KyJK2x0xuB1I9L0OODr7UHe1hsLRBytyVePtIYpBC6oNHe5sG3gYmhDbOHQhkwmZfOvlEt2kjVUR5Xnp6c+ieGHRhTXIO2GeHnFoYsLzxWmWCt9UvP9vEOJYeH7b7ZszCktykI8ZDkLGpkej118pvJe2wRC6EJBVYu/Aq5gZsw8rOKJ4lVDDX6UGgDCtex5pzhbQ8kusQfMLDkPrBke2SoEaOZrDQ4jd6bEb2vTfjUuLnGMnoNSBuCarw='
+token:
+  expiration_time: 86400000
+  secret: changed_#1thisisaverysecurekeywithatleast32characterslongthisisa
+  
+gateway:
+  ip: 192.168.45.83
+order-service:
+ url: http://ORDERSERVICE/order-service/%s/orders
+ exception: 
+  order_is_empty: User's orders not found
